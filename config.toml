@@ -6,7 +6,7 @@ description = "Well, Hi"
 
 compile_sass = true
 minify_html = true
-build_search_index = false
+build_search_index = true
 
 [markdown]
 highlight_code = true
@@ -19,16 +19,25 @@ highlight_themes_css = [
 smart_punctuation = true
 external_links_target_blank = true
 
+[search]
+index_format = "elasticlunr_json"
+
 [extra]
 # Sets theme and browser theme color.
 # See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-primary_color = "#ffd061"
-# primary_color = "#c58223"
+# primary_color = "#ffd061"
+primary_color = "#c58223"
 primary_color_alpha = "rgba(227, 186, 143, 0.6)"
+
 # Ditto but for the dark mode.
 # If not set regular variant will be used.
 primary_color_dark = "#ff7800"
 primary_color_dark_alpha = "rgba(255, 120, 0, 0.2)"
+
+# Use emoji as a favicon.
+# Only one emoji is being rendered, everything else is truncated.
+emoji_favicon = "🐁"
+
 # URL to website's source code
 source_url = "https://github.com/matteorisso/matteorisso.github.io/tree/main"
 # Whether to show "copy code" button on all code blocks
@@ -41,13 +50,18 @@ show_read_time = true
 # words_per_minute = "200"
 
 [extra.nav]
-
 icons = true
 links = [
-  { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/section/index.md", name = "Section" },
-  { url = "http://github.com/matteorisso", name = "", icon = "github" },
+  { url = "@/blog/_index.md", name = "Blog", icon = "journals", icon_source = "bi" },
+  { url = "http://github.com/matteorisso", name = "GitHub", icon = "github", icon_source = "bi" },
+  { url = "https://www.linkedin.com/in/matteo-risso-a66b01104/", name = "LinkedIn", icon = "linkedin", icon_source = "bi" },
+  { url = "https://scholar.google.com/citations?user=ltE9im8AAAAJ&hl=en", name = "Google Scholar", icon = "google-scholar-square", icon_source = "ai" },
 ]
 
-# socials = [
-# ]
+[extra.footer]
+# Whether to show "© Title, YEAR"
+show_copyright = true
+# Whether to show "Powered by Zola and Duckquill"
+show_powered_by = true
+# Whether to show link to website source
+show_source = false

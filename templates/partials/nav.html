@@ -17,13 +17,14 @@
             <li>
                 <a href="{{ link.url }}" {%- if current_url | default(value='/' ) | trim_end_matches(pat='/' ) |
                     safe==link.url | trim_end_matches(pat='/' ) | safe -%} class="active" {%- endif -%}>
-                    {{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings)
-                    -}}
                     {% if config.extra.nav.icons %}
                     {% if link.icon %}
-                    <i class="bi bi-{{ link.icon }}"></i>
+                    <i
+                        class="{% if link.icon_source == 'bi' %}bi bi-{{ link.icon }}{% elif link.icon_source == 'ai' %}ai ai-{{ link.icon }}{% endif %}"></i>
                     {% endif %}
                     {% endif %}
+                    {{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings)
+                    -}}
                 </a>
             </li>
             {%- else %}
@@ -31,6 +32,12 @@
                 <a href="{{ get_url(path=link.url, lang=lang)}}" {%- if current_url | default(value='/' ) |
                     trim_end_matches(pat='/' ) | safe==get_url(path=link.url, lang=lang) | trim_end_matches(pat='/' ) |
                     safe -%} class="active" {%- endif -%}>
+                    {% if config.extra.nav.icons %}
+                    {% if link.icon %}
+                    <i
+                        class="{% if link.icon_source == 'bi' %}bi bi-{{ link.icon }}{% elif link.icon_source == 'ai' %}ai ai-{{ link.icon }}{% endif %}"></i>
+                    {% endif %}
+                    {% endif %}
                     {{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings)
                     -}}
                 </a>
