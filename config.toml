@@ -55,9 +55,9 @@ show_read_time = true
 icons = true
 links = [
   { url = "@/blog/_index.md", name = "Blog", icon = "journals", icon_source = "bi" },
-  { url = "http://github.com/matteorisso", name = "GitHub", icon = "github", icon_source = "bi" },
-  { url = "https://www.linkedin.com/in/matteo-risso-a66b01104/", name = "LinkedIn", icon = "linkedin", icon_source = "bi" },
-  { url = "https://scholar.google.com/citations?user=ltE9im8AAAAJ&hl=en", name = "Google Scholar", icon = "google-scholar-square", icon_source = "ai" },
+  { url = "http://github.com/matteorisso", name = "", icon = "github", icon_source = "bi" },
+  { url = "https://www.linkedin.com/in/matteo-risso-a66b01104/", name = "", icon = "linkedin", icon_source = "bi" },
+  { url = "https://scholar.google.com/citations?user=ltE9im8AAAAJ&hl=en", name = "", icon = "google-scholar-square", icon_source = "ai" },
 ]
 
 [extra.footer]
