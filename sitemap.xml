@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://matteorisso.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://matteorisso.github.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://matteorisso.github.io/blog/ws01/</loc>
+        <lastmod>2024-08-05</lastmod>
+    </url>
+    <url>
+        <loc>https://matteorisso.github.io/blog/ws02/</loc>
+        <lastmod>2024-08-12</lastmod>
+    </url>
+    <url>
+        <loc>https://matteorisso.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://matteorisso.github.io/tags/weekly-summary/</loc>
+    </url>
+</urlset>
