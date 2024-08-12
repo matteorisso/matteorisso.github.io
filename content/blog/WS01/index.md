@@ -1,8 +1,8 @@
 +++
 authors = ["Matteo Risso"]
-title = "My first post"
+title = "Weekly Summary 01"
 description = "Weekly Summary 01."
-date = 2024-12-01
+date = 2024-08-05
 [taxonomies]
 tags = ["Weekly Summary"]
 [extra]
